@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="caps_lock_active">#FF0000</color> <!-- Red or any highlight color -->
+    <color name="caps_lock_inactive">#000000</color>
+</resources>
