@@ -5,7 +5,7 @@
     android:keyHeight="40dp"
     android:keyWidth="20%p"
     android:id="@+id/keyboard_view"
-
+    android:background="#FF0000"
     android:keyPreviewOffset="0dp"
     android:keyPreviewHeight="0dp"
     >
@@ -16,6 +16,7 @@
         <Key android:keyLabel="/" android:keyEdgeFlags="left" />
         <Key android:keyLabel="\\" />
         <Key android:keyLabel="?" />
+        <Key android:keyLabel="@"/>
         <Key android:keyLabel="'" />
         <Key android:keyLabel='"' />
 <!--        <Key android:keyLabel="," />-->
@@ -40,7 +41,7 @@
 
     <Row android:horizontalGap="0dp">
         <Key android:keyLabel="&lt;" android:keyEdgeFlags="left"/>
-        <Key android:keyLabel="@"/>
+        <Key android:keyLabel="{"/>
         <Key android:keyLabel="["/>
         <Key android:keyLabel="("/>
         <Key android:keyLabel="="/>

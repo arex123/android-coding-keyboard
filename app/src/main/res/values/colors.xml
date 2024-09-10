@@ -4,4 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="caps_lock_active">#FF0000</color> <!-- Red or any highlight color -->
     <color name="caps_lock_inactive">#000000</color>
+
+    <color name="primary_color">#FF5722</color> <!-- Orange -->
+    <color name="secondary_color">#03A9F4</color> <!-- Light Blue -->
+    <color name="button_background">#4CAF50</color> <!-- Green -->
+    <color name="text_color">#212121</color> <!-- Dark Gray -->
 </resources>

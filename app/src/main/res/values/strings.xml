@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">code keyboard</string>
+    <string name="keep_coding_text">Keep coding,\n\n Enable this keyboard from setting -> language -> on-screen/virtual keyboard -> manage -> enable code keyboard</string>
 </resources>

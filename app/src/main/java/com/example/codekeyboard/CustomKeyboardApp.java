@@ -4,8 +4,10 @@ import android.content.Context;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 
@@ -72,8 +74,19 @@ public class CustomKeyboardApp extends InputMethodService
             inputConnection.deleteSurroundingText(0, 1);
 
         }else if (primaryCode == -6) {
+
+            EditorInfo editorInfo = getCurrentInputEditorInfo();
+            // Check if the input field is multi-line or not
+            if ((editorInfo.inputType & InputType.TYPE_TEXT_FLAG_MULTI_LINE) != 0) {
+                // If it's a multi-line field, insert a new line
+                inputConnection.commitText("\n", 1);
+            } else {
+                // Otherwise, handle it like a form submission or "Enter" action
+                inputConnection.performEditorAction(EditorInfo.IME_ACTION_SEARCH);
+            }
+
             //for moving to newline
-            inputConnection.commitText("\n", 1);
+//            inputConnection.commitText("\n", 1);
         }else if (primaryCode == 32) {  // Key code for space is 32
 
 
