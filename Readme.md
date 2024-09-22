@@ -1,4 +1,4 @@
-A simple very usefull keyboard for developera who sometime wants to code on their mobile.
+A simple very usefull keyboard for developera who sometime wants to code on their mobile phone.
 
 <br>
 
